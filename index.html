@@ -8,7 +8,24 @@
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
-     
+        <script>
+            function calcularIdade(dataNascimento) {
+                const hoje = new Date();
+                const nascimento = new Date(dataNascimento);
+                let idade = hoje.getFullYear() - nascimento.getFullYear();
+                const mes = hoje.getMonth() - nascimento.getMonth();
+                if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+                    idade--;
+                }
+                return idade;
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const idadeElemento = document.getElementById('idade');
+                const idade = calcularIdade('1989-12-24');
+                idadeElemento.textContent = idade;
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -32,18 +49,19 @@
                 </section>
                 <section class="super-card-text">
                     <p>
-                        Olá, sou Marques Filho, um entusiasta da tecnologia com 34 anos de idade, 
+                        Olá, sou Marques Filho, um entusiasta da tecnologia com <span id="idade"></span> anos de idade, 
                         atualmente imerso no emocionante mundo da Ciência de Dados. 
                         Minha jornada acadêmica me levou à faculdade de Ciência de Dados, 
                         onde mergulhei fundo no estudo e na aplicação de princípios fundamentais. 
                         Minha paixão pelo universo da programação me levou a dominar várias linguagens, 
-                        incluindo Python, SQL e DAX, 
+                        incluindo Python e SQL, 
                         capacitando-me a criar e gerenciar ambientes de desenvolvimento com facilidade.
                     </p>
                     <p>
                         Além disso, também estudo desenvolvimento WEB em Flask e tenho experiência em automação SAP com Python. 
+                        Atualmente, trabalho como analista de dados e RPA em uma empresa de rede de supermercados no Nordeste. 
                         Minha habilidade em combinar dados e insights é aprimorada por minha proficiência 
-                        em Excel e Power BI. Sou movido pela curiosidade e pela determinação, 
+                        em Excel. Sou movido pela curiosidade e pela determinação, 
                         e tenho grandes ambições de construir uma carreira de sucesso na área de tecnologia. 
                         Estou ansioso para contribuir com soluções inovadoras e aprender continuamente 
                         enquanto embarco nessa emocionante jornada na Ciência de Dados.
