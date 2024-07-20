@@ -5,9 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contribua</title>
-
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro, .contribution-methods, .future-projects, .thank-you, .contact-form, .social-media {
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .card-img img {
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-button {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-button button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .card-button button:hover {
+            background-color: #0056b3;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .two-columns > * {
+            flex: 1 1 calc(50% - 20px);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,40 +74,31 @@
             </nav>
         </div>
     </header>
-
     <main class="container">
         <section class="intro">
-            <h1>Contribua</h1>
+            <h1 class="section-title">Contribua</h1>
             <p>Suas contribuições são essenciais para apoiar meu trabalho e permitir que eu continue desenvolvendo novos projetos e compartilhando conhecimento. Abaixo estão as formas de contribuir e algumas das metas que planejo alcançar com a sua ajuda.</p>
         </section>
-
         <section class="contribution-methods">
-            <h2>Formas de Contribuir</h2>
+            <h2 class="section-title">Formas de Contribuir</h2>
             <div class="card">
                 <div class="card-img">
-                    <div class="img-body"><img src="./img/port1.png" alt="QR Code para PIX" title="QR Code para PIX"></div>
+                    <img src="./img/port1.png" alt="QR Code para PIX" title="QR Code para PIX">
                 </div>
                 <div class="card-body">
-                    <p>
-                        CHAVE PIX (e-mail):
-                        marquinhosilvafilho@hotmail.com
-                    </p>
-                    <p>
-                        CHAVE PIX (Aleatória):
-                        <p>d9047f40-afee-4f78-b28b-250977364600</p>
-                    </p>
+                    <p>CHAVE PIX (e-mail): marquinhosilvafilho@hotmail.com</p>
+                    <p>CHAVE PIX (Aleatória): 3405549d-2de2-4b36-a3c0-b5d339fc33dd</p>
                 </div>
                 <div class="card-button">
                     <button>Saiba mais</button>
                 </div>
             </div>
         </section>
-
         <section class="future-projects">
-            <h2>Projetos Futuros</h2>
+            <h2 class="section-title">Projetos Futuros</h2>
             <div class="card">
                 <div class="card-img">
-                    <div class="img-body"><img src="./img/port2.png" alt="Portfólio 2" title="Portfólio 2"></div>
+                    <img src="./img/port2.png" alt="Portfólio 2" title="Portfólio 2">
                 </div>
                 <div class="card-body">
                     <p>Em Breve mais conteúdo para todos, contribua e aguarde por novidades emocionantes.</p>
@@ -65,30 +108,24 @@
                 </div>
             </div>
         </section>
-
         <section class="thank-you">
-            <h2>Agradecimentos</h2>
+            <h2 class="section-title">Agradecimentos</h2>
             <p>Muito obrigado a todos que já contribuíram. Seu apoio é fundamental para o meu crescimento e desenvolvimento contínuo.</p>
         </section>
-
         <section class="contact-form">
-            <h2>Entre em Contato</h2>
+            <h2 class="section-title">Entre em Contato</h2>
             <form action="mailto:marquinhosilvafilho@hotmail.com" method="post" enctype="text/plain">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
                 <button type="submit">Enviar</button>
             </form>
         </section>
-
         <section class="social-media">
-            <h2>Siga-me</h2>
+            <h2 class="section-title">Siga-me</h2>
             <p>Acompanhe meu trabalho nas redes sociais:</p>
             <a href="https://twitter.com/seuusuario" target="_blank">Twitter</a>
             <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
