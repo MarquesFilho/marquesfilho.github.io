@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contribua</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="" class="branch"><img src="./img/logo.png" alt="Minha logo" title="Nome da minha logo"></a>
+            <nav class="menu">
+                <ul>
+                    <li><a class="menu-link" href="index.html">Início</a></li>
+                    <li><a class="menu-link" href="porrtfolio.html">Contribua</a></li>
+                    <li><a class="menu-link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-     
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <a href="" class="branch"><img src="./img/logo.png" alt="Minha logo" title="Nome da minha logo"></a>
-                <nav class="menu">
-                    <ul>
-                        <li><a class="menu-link" href="index.html">Início</a></li>
-                        <li><a class="menu-link" href="porrtfolio.html">Contribua</a></li>
-                        <li><a class="menu-link" href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <main class="container">
+        <section class="intro">
+            <h1>Contribua</h1>
+            <p>Suas contribuições são essenciais para apoiar meu trabalho e permitir que eu continue desenvolvendo novos projetos e compartilhando conhecimento. Abaixo estão as formas de contribuir e algumas das metas que planejo alcançar com a sua ajuda.</p>
+        </section>
 
-        <main class="container">
-            <section class="card">
+        <section class="contribution-methods">
+            <h2>Formas de Contribuir</h2>
+            <div class="card">
                 <div class="card-img">
-                    <div class="img-body"><img src="./img/port1.png" alt="Portfólio 1" title="Portfólio 1"></div>
+                    <div class="img-body"><img src="./img/novo_qrcode.png" alt="QR Code para PIX" title="QR Code para PIX"></div>
                 </div>
-        
                 <div class="card-body">
                     <p>
-                        CHAVES PIX (e-mail):
+                        CHAVE PIX (e-mail):
                         marquinhosilvafilho@hotmail.com
                     </p>
                     <p>
                         CHAVE PIX (Aleatória):
-
                         <p>d9047f40-afee-4f78-b28b-250977364600</p>
                     </p>
                 </div>
-        
                 <div class="card-button">
                     <button>Saiba mais</button>
                 </div>
-            </section>
-        
-            <section class="card">
+            </div>
+        </section>
+
+        <section class="future-projects">
+            <h2>Projetos Futuros</h2>
+            <div class="card">
                 <div class="card-img">
                     <div class="img-body"><img src="./img/port2.png" alt="Portfólio 2" title="Portfólio 2"></div>
                 </div>
-        
                 <div class="card-body">
-                    <p>
-                        Em Breve mais conteudo para todos,
-                    </p>
-                    <p>
-                        Contribuam e aguardem.
-                     </p>
+                    <p>Em Breve mais conteúdo para todos, contribua e aguarde por novidades emocionantes.</p>
                 </div>
-        
                 <div class="card-button">
                     <button>Saiba mais</button>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </section>
+
+        <section class="thank-you">
+            <h2>Agradecimentos</h2>
+            <p>Muito obrigado a todos que já contribuíram. Seu apoio é fundamental para o meu crescimento e desenvolvimento contínuo.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:marquinhosilvafilho@hotmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="social-media">
+            <h2>Siga-me</h2>
+            <p>Acompanhe meu trabalho nas redes sociais:</p>
+            <a href="https://twitter.com/seuusuario" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+            <a href="https://github.com/seuusuario" target="_blank">GitHub</a>
+        </section>
+    </main>
+</body>
 </html>
