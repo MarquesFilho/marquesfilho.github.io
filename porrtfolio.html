@@ -13,7 +13,7 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .intro, .contribution-methods, .future-projects, .thank-you, .contact-form, .social-media {
+        .intro, .thank-you, .contact-form, .social-media {
             margin-bottom: 40px;
         }
         .card {
@@ -55,9 +55,20 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            margin-bottom: 40px;
         }
         .two-columns > * {
             flex: 1 1 calc(50% - 20px);
+        }
+        .main-content {
+            display: flex;
+        }
+        .main-content .left-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .main-content .right-column {
+            flex: 2;
         }
     </style>
 </head>
@@ -79,35 +90,37 @@
             <h1 class="section-title">Contribua</h1>
             <p>Suas contribuições são essenciais para apoiar meu trabalho e permitir que eu continue desenvolvendo novos projetos e compartilhando conhecimento. Abaixo estão as formas de contribuir e algumas das metas que planejo alcançar com a sua ajuda.</p>
         </section>
-        <section class="contribution-methods">
-            <h2 class="section-title">Formas de Contribuir</h2>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./img/port1.png" alt="QR Code para PIX" title="QR Code para PIX">
+        <div class="main-content">
+            <section class="contribution-methods left-column">
+                <h2 class="section-title">Formas de Contribuir</h2>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/image.png" alt="QR Code para PIX" title="QR Code para PIX">
+                    </div>
+                    <div class="card-body">
+                        <p>CHAVE PIX (e-mail): marquinhosilvafilho@hotmail.com</p>
+                        <p>CHAVE PIX (Aleatória): 3405549d-2de2-4b36-a3c0-b5d339fc33dd</p>
+                    </div>
+                    <div class="card-button">
+                        <button>Saiba mais</button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>CHAVE PIX (e-mail): marquinhosilvafilho@hotmail.com</p>
-                    <p>CHAVE PIX (Aleatória): 3405549d-2de2-4b36-a3c0-b5d339fc33dd</p>
+            </section>
+            <section class="future-projects right-column">
+                <h2 class="section-title">Projetos Futuros</h2>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/port2.png" alt="Portfólio 2" title="Portfólio 2">
+                    </div>
+                    <div class="card-body">
+                        <p>Em Breve mais conteúdo para todos, contribua e aguarde por novidades emocionantes.</p>
+                    </div>
+                    <div class="card-button">
+                        <button>Saiba mais</button>
+                    </div>
                 </div>
-                <div class="card-button">
-                    <button>Saiba mais</button>
-                </div>
-            </div>
-        </section>
-        <section class="future-projects">
-            <h2 class="section-title">Projetos Futuros</h2>
-            <div class="card">
-                <div class="card-img">
-                    <img src="./img/port2.png" alt="Portfólio 2" title="Portfólio 2">
-                </div>
-                <div class="card-body">
-                    <p>Em Breve mais conteúdo para todos, contribua e aguarde por novidades emocionantes.</p>
-                </div>
-                <div class="card-button">
-                    <button>Saiba mais</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="thank-you">
             <h2 class="section-title">Agradecimentos</h2>
             <p>Muito obrigado a todos que já contribuíram. Seu apoio é fundamental para o meu crescimento e desenvolvimento contínuo.</p>
