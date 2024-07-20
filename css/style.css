@@ -166,3 +166,13 @@ main {width: 100%;}
 .map {
     margin: 20px 0;
 }
+
+
+.social-media a {
+    color: #007BFF; /* Cor azul escuro */
+    text-decoration: none; /* Remover sublinhado por padrão */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}
